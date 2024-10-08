@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empresas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="empresas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Empresas</h1>
+        </header>
+        <section class="cadastro-empresas-section">
+            <form id="empresasForm">
+                <div class="input-group">
+                    <label for="nomeEmpresa">Nome da Empresa:</label>
+                    <input type="text" id="nomeEmpresa" name="nomeEmpresa" required>
+                </div>
+                <div class="input-group">
+                    <label for="site">Site (URL):</label>
+                    <input type="url" id="site" name="site" placeholder="https://www.seusite.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="instagram">Instagram (URL):</label>
+                    <input type="url" id="instagram" name="instagram" placeholder="https://www.instagram.com/seuinsta" required>
+                </div>
+                <button type="submit" class="btn-calculate">Cadastrar Empresa</button>
+            </form>
+
+            <!-- Tabela para mostrar os dados das empresas -->
+            <table id="tabelaEmpresas" class="tabela-pessoas">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Site</th>
+                        <th>Instagram</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas serão inseridas via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

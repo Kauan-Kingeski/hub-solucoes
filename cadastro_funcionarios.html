@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="funcionarios.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Funcionários</h1>
+        </header>
+        <section class="cadastro-funcionarios-section">
+            <form id="funcionariosForm">
+                <div class="input-group">
+                    <label for="salario">Salário Base (R$):</label>
+                    <input type="number" id="salario" name="salario" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="horas-extra">Horas Extras (HE):</label>
+                    <input type="number" id="horas-extra" name="horas-extra" required>
+                </div>
+                <div class="input-group">
+                    <label for="insalubridade">Insalubridade (%):</label>
+                    <input type="number" id="insalubridade" name="insalubridade" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="periculosidade">Periculosidade (%):</label>
+                    <input type="number" id="periculosidade" name="periculosidade" step="0.01" required>
+                </div>
+                <button type="submit" class="btn-calculate">Cadastrar Funcionário</button>
+            </form>
+
+            <div id="resultado" class="resultado"></div>
+
+            <table id="tabelaFuncionarios" class="tabela-pessoas">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Salário Base (R$)</th>
+                        <th>Horas Extras</th>
+                        <th>Insalubridade (%)</th>
+                        <th>Periculosidade (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas serão inseridas via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
